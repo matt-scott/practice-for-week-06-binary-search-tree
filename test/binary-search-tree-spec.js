@@ -247,7 +247,12 @@ describe('Binary Search Tree', () => {
     });
 
     it('inOrderTraversal - can print nodes in in-order', () => {
-
+      //      4
+      //    /   \
+      //   2     6
+      //  / \   / \
+      // 1   3 5   7
+      
       bst.inOrderTraversal();
 
       expect(consoleSpy).on.nth(1).be.called.with(1);
